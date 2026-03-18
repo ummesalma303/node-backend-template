@@ -20,22 +20,22 @@ jobs:
                   cache: 'pnpm'
 
             - name: Install dependencies
-              run: npm ci
+              run: pnpm install
 
             - name: Run tests
-              run: npm run test:run
+              run: pnpm run test:run
 
             - name: Run TypeScript type checking
-              run: npm run type-check
+              run: pnpm run type-check
 
-            - name: Run ESLint and fix
-              run: npm run lint:fix
-
-            - name: Format with Prettier
-              run: npm run format
+            - name: Run ESLint and fix auto-fixable issues
+              run: pnpm run lint:fix
 
             - name: Check for remaining ESLint errors
-              run: npm run lint
+              run: pnpm run lint
+
+            - name: Format with Prettier
+              run: pnpm run format
 
             - name: Check for remaining formatting issues
-              run: npm run format:check
+              run: pnpm run format:check
