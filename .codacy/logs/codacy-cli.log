@@ -239,3 +239,277 @@
 2026-03-18T10:58:36+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/home/umme/Desktop/web-projects/backend-starter/.github/workflows/ci.yml] command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/.github/workflows/ci.yml --format sarif]
 2026-03-18T10:58:36+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
 2026-03-18T10:59:37+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T11:04:37+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T11:04:37+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/package.json --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/package.json]
+2026-03-18T11:04:38+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-03-18T11:05:19+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T11:05:19+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/home/umme/Desktop/web-projects/backend-starter/package.json] command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/package.json --format sarif]
+2026-03-18T11:05:19+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T11:06:36+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T11:06:36+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/1773809289459-eslint.config.js --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/1773809289459-eslint.config.js]
+2026-03-18T11:06:37+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T11:06:50+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T14:11:59+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:11:59+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[] command=update full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 update]
+2026-03-18T14:11:59+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:11:59+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=reset full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 config reset] args=[]
+2026-03-18T14:20:33+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:20:33+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 update] args=[] command=update
+2026-03-18T14:20:34+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:20:34+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=reset full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 config reset] args=[]
+2026-03-18T14:21:09+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:21:09+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/.config/Code/User/settings.json --format sarif] args=[/home/umme/.config/Code/User/settings.json]
+2026-03-18T14:21:09+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T14:21:34+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:21:35+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=discover full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 config discover /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T14:21:35+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:21:36+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T14:21:37+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/lizard.yaml tool=lizard
+2026-03-18T14:21:42+06:00 [DEBUG] (codacy-cli-v2/cmd/config.go:181) Detected recognizable file extensions extensions=[.ts (1 files)] path=/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts
+2026-03-18T14:21:42+06:00 [DEBUG] (codacy-cli-v2/config/detector.go:109) Found relevant tool for extension tool=opengrep extension=.ts count=1
+2026-03-18T14:21:42+06:00 [DEBUG] (codacy-cli-v2/config/detector.go:109) Found relevant tool for extension tool=eslint extension=.ts count=1
+2026-03-18T14:21:42+06:00 [DEBUG] (codacy-cli-v2/config/detector.go:109) Found relevant tool for extension tool=lizard extension=.ts count=1
+2026-03-18T14:21:42+06:00 [DEBUG] (codacy-cli-v2/config/detector.go:109) Found relevant tool for extension extension=.ts count=1 tool=trivy
+2026-03-18T14:21:42+06:00 [DEBUG] (codacy-cli-v2/config/detector.go:121) Detected relevant tools for path tools=[eslint lizard opengrep trivy] path=/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts
+2026-03-18T14:21:54+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T14:25:36+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:25:37+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=update full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 update] args=[]
+2026-03-18T14:25:37+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:25:37+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=reset full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 config reset] args=[]
+2026-03-18T14:25:38+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:25:39+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/.config/Code/User/settings.json --format sarif] args=[/home/umme/.config/Code/User/settings.json]
+2026-03-18T14:25:39+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-03-18T14:26:09+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:26:10+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 config discover /home/umme/Desktop/web-projects/backend-starter/src/constant/application.ts] args=[/home/umme/Desktop/web-projects/backend-starter/src/constant/application.ts] command=discover
+2026-03-18T14:26:11+06:00 [DEBUG] (codacy-cli-v2/cmd/config.go:181) Detected recognizable file extensions path=/home/umme/Desktop/web-projects/backend-starter/src/constant/application.ts extensions=[.ts (1 files)]
+2026-03-18T14:26:11+06:00 [DEBUG] (codacy-cli-v2/config/detector.go:109) Found relevant tool for extension tool=trivy extension=.ts count=1
+2026-03-18T14:26:11+06:00 [DEBUG] (codacy-cli-v2/config/detector.go:109) Found relevant tool for extension tool=opengrep extension=.ts count=1
+2026-03-18T14:26:11+06:00 [DEBUG] (codacy-cli-v2/config/detector.go:109) Found relevant tool for extension tool=eslint extension=.ts count=1
+2026-03-18T14:26:11+06:00 [DEBUG] (codacy-cli-v2/config/detector.go:109) Found relevant tool for extension tool=lizard extension=.ts count=1
+2026-03-18T14:26:11+06:00 [DEBUG] (codacy-cli-v2/config/detector.go:121) Detected relevant tools for path path=/home/umme/Desktop/web-projects/backend-starter/src/constant/application.ts tools=[eslint lizard opengrep trivy]
+2026-03-18T14:26:12+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:26:12+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/constant/application.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/constant/application.ts]
+2026-03-18T14:26:12+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T14:26:12+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T14:26:44+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T14:26:48+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T14:28:27+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:28:28+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/home/umme/Desktop/web-projects/backend-starter/src/constant/1773822503010-application.ts] command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/constant/1773822503010-application.ts --format sarif]
+2026-03-18T14:28:28+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T14:28:40+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T14:28:43+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T14:29:50+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T14:35:36+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:35:39+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=update full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 update] args=[]
+2026-03-18T14:35:40+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:35:40+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=reset full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 config reset] args=[]
+2026-03-18T14:36:47+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:36:47+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T14:36:47+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T14:38:39+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T14:38:39+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T14:38:48+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T14:39:15+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:39:15+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T14:39:15+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T14:39:54+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-03-18T14:39:54+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T14:39:57+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T14:40:06+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:40:06+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts] command=analyze
+2026-03-18T14:40:06+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T14:40:07+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T14:40:40+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T14:40:40+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/eslint.config.mjs tool=eslint
+2026-03-18T14:41:47+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:41:48+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/1773823293548-logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/1773823293548-logger.ts]
+2026-03-18T14:41:48+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/lizard.yaml tool=lizard
+2026-03-18T14:41:54+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T14:43:13+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T14:43:14+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/eslint.config.mjs tool=eslint
+2026-03-18T14:44:35+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:44:37+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T14:44:37+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T14:46:06+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T14:46:09+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/eslint.config.mjs tool=eslint
+2026-03-18T14:47:49+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T14:47:59+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:47:59+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T14:47:59+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-03-18T14:47:59+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T14:48:07+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/lizard.yaml tool=lizard
+2026-03-18T14:48:08+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=opengrep
+2026-03-18T14:55:51+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:55:55+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/1773824121362-logger.ts] command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/1773824121362-logger.ts --format sarif]
+2026-03-18T14:55:57+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T14:57:18+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T14:57:21+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T14:58:45+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T14:59:07+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T14:59:07+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/1773824345880-logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/1773824345880-logger.ts]
+2026-03-18T14:59:07+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T14:59:08+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:00:15+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:00:15+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:00:33+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:00:33+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts] command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif]
+2026-03-18T15:00:33+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:00:39+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:00:40+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:01:32+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:01:37+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:01:37+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T15:01:37+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/eslint.config.mjs tool=eslint
+2026-03-18T15:01:43+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/lizard.yaml tool=lizard
+2026-03-18T15:01:45+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:02:32+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:03:25+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:03:25+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T15:03:25+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:03:27+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:03:28+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=opengrep
+2026-03-18T15:04:18+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:04:20+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:04:21+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T15:04:21+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:05:07+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:05:07+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:05:11+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/lizard.yaml tool=lizard
+2026-03-18T15:05:20+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:05:20+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/1773824719622-logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/1773824719622-logger.ts]
+2026-03-18T15:05:20+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:05:23+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:05:23+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=opengrep
+2026-03-18T15:06:13+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:07:45+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:07:45+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts] command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif]
+2026-03-18T15:07:45+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:07:46+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=opengrep
+2026-03-18T15:08:27+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:08:27+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:09:22+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:09:22+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts] command=analyze
+2026-03-18T15:09:22+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:09:23+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/lizard.yaml tool=lizard
+2026-03-18T15:09:24+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=opengrep
+2026-03-18T15:10:06+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:11:22+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:11:22+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/constant/application.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/constant/application.ts]
+2026-03-18T15:11:22+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:11:22+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:11:23+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/lizard.yaml tool=lizard
+2026-03-18T15:11:23+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:15:41+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:15:43+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/1773825238763-logger.ts] command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/1773825238763-logger.ts --format sarif]
+2026-03-18T15:15:43+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:15:43+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:15:45+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:15:47+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=opengrep
+2026-03-18T15:19:30+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:19:30+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/1773825539324-logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/1773825539324-logger.ts] command=analyze
+2026-03-18T15:19:30+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:19:30+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:19:32+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/lizard.yaml tool=lizard
+2026-03-18T15:19:33+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=opengrep
+2026-03-18T15:20:58+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:20:58+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/1773825649538-logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/1773825649538-logger.ts]
+2026-03-18T15:20:58+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:21:06+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:21:55+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-03-18T15:21:55+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/eslint.config.mjs tool=eslint
+2026-03-18T15:22:12+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:22:12+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts] command=analyze
+2026-03-18T15:22:12+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-03-18T15:22:12+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:22:13+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:22:15+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=opengrep
+2026-03-18T15:23:09+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:23:09+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T15:23:09+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:23:09+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:23:10+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:23:11+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=opengrep
+2026-03-18T15:24:14+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:24:14+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts] command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif]
+2026-03-18T15:24:14+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:24:15+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:24:16+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:24:57+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:25:01+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:25:01+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T15:25:01+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:25:41+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:25:41+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:25:43+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:28:33+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:28:33+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts] command=analyze
+2026-03-18T15:28:33+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:28:35+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/lizard.yaml tool=lizard
+2026-03-18T15:28:35+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:29:18+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:29:29+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:29:29+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T15:29:29+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/eslint.config.mjs tool=eslint
+2026-03-18T15:29:31+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:29:33+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=opengrep
+2026-03-18T15:30:18+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:30:46+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:30:46+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts] command=analyze
+2026-03-18T15:30:46+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-03-18T15:30:46+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:30:48+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/lizard.yaml tool=lizard
+2026-03-18T15:30:49+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=opengrep
+2026-03-18T15:32:12+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:32:12+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/1773826330470-logger.ts] command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/1773826330470-logger.ts --format sarif]
+2026-03-18T15:32:12+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:32:13+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:33:04+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-03-18T15:33:04+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:33:26+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:33:26+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T15:33:26+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:33:27+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:34:16+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:34:16+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:34:36+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:34:36+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts] command=analyze
+2026-03-18T15:34:36+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:34:36+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:34:37+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:34:38+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:36:40+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:36:40+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T15:36:40+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/eslint.config.mjs tool=eslint
+2026-03-18T15:37:04+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:37:05+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:38:12+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-03-18T15:38:14+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:38:14+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts] command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif]
+2026-03-18T15:38:14+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:38:14+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:38:23+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:38:26+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:40:29+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:40:29+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/1773826825071-logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/1773826825071-logger.ts]
+2026-03-18T15:40:29+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:40:38+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=opengrep
+2026-03-18T15:41:22+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-03-18T15:41:22+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:41:31+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:41:31+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T15:41:31+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:41:31+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:41:32+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/lizard.yaml tool=lizard
+2026-03-18T15:41:33+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:42:31+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:42:31+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif] args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts]
+2026-03-18T15:42:31+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:42:33+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:42:33+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2026-03-18T15:43:19+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:43:31+06:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.370.sha.2847fb6 (2847fb6) built at 2026-03-17T12:37:16Z
+2026-03-18T15:43:31+06:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts] command=analyze full_command=[/home/umme/.cache/codacy/codacy-cli-v2/1.0.0-main.370.sha.2847fb6/codacy-cli-v2 analyze /home/umme/Desktop/web-projects/backend-starter/src/utils/logger.ts --format sarif]
+2026-03-18T15:43:31+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-03-18T15:43:31+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2026-03-18T15:43:33+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2026-03-18T15:43:33+06:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=opengrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
