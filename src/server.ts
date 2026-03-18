@@ -1,11 +1,28 @@
-import { middleware } from '#middlewares/middlewares.js'
-import express from 'express'
+import app from '#app.js'
+import config from '#config/config.js'
+import { Server } from 'http'
 
-const app = express()
-const port = process.env.PORT ?? '9001'
+const server: Server = app.listen(config.PORT, () => {
+    console.warn('Example app listening on port', {
+        meta: {
+            PORT: config.PORT
+        }
+    })
 
-app.get('/', middleware)
+    console.info('APPLICATION_STARTER', {
+        meta: {
+            PORT: config.PORT,
+            SERVER_URL: config.SERVER_URL
+        }
+    })
+})
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+server.on('error', (error) => {
+    console.error('APPLICATION_ERROR', { meta: error })
+    process.exit(1)
+})
+
+process.on('SIGINT', () => {
+    console.info('Shutting down server...')
+    server.close(() => process.exit(0))
 })

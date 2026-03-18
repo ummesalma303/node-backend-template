@@ -4,8 +4,9 @@
     "description": "",
     "main": "server.ts",
     "scripts": {
-        "dev": "tsx --watch --env-file .env src/server.ts",
-        "start": "node --env-file .env dist/server.js",
+        "dev": "tsx --watch --env-file .env.development src/server.ts",
+        "dev:staging": "tsx --watch --env-file .env.staging src/server.ts",
+        "dev:prod": "tsx --watch --env-file .env.production src/server.ts",
         "build": "tsc -p tsconfig.build.json",
         "test:run": "vitest --run",
         "test:ui": "vitest --ui",
@@ -35,7 +36,9 @@
         "@commitlint/cli": "^20.5.0",
         "@commitlint/config-conventional": "^20.5.0",
         "@eslint/js": "^10.0.1",
+        "@types/cors": "^2.8.19",
         "@types/express": "^5.0.6",
+        "@types/helmet": "^4.0.0",
         "@types/node": "^25.5.0",
         "@vitest/coverage-v8": "^4.1.0",
         "@vitest/eslint-plugin": "^1.6.12",
@@ -43,6 +46,7 @@
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-perfectionist": "^5.6.0",
         "eslint-plugin-unused-imports": "^4.4.1",
+        "globals": "^17.4.0",
         "husky": "^9.1.7",
         "lint-staged": "^16.4.0",
         "prettier": "^3.8.1",
@@ -55,7 +59,9 @@
         "#*": "./src/*"
     },
     "dependencies": {
-        "express": "^5.2.1"
+        "dotenv": "^17.3.1",
+        "express": "^5.2.1",
+        "helmet": "^8.1.0"
     },
     "volta": {
         "node": "25.8.1",

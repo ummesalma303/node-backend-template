@@ -3,7 +3,6 @@ import vitest from '@vitest/eslint-plugin'
 import prettier from 'eslint-config-prettier'
 import perfectionist from 'eslint-plugin-perfectionist'
 import { defineConfig } from 'eslint/config'
-import globals from 'globals' // ১. এটি ইম্পোর্ট করুন
 import tseslint from 'typescript-eslint'
 
 export default defineConfig([
@@ -18,11 +17,6 @@ export default defineConfig([
 
     {
         languageOptions: {
-            // ২. এখানে গ্লোবাল ভেরিয়েবলগুলো ডিফাইন করে দিন
-            globals: {
-                ...globals.node,
-                ...globals.jest // যদি টেস্টের জন্য লাগে
-            },
             parserOptions: {
                 projectService: true,
                 tsconfigRootDir: import.meta.dirname
