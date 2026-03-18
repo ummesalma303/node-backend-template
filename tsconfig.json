@@ -3,15 +3,16 @@
         "module": "ESNext",
         "moduleResolution": "bundler",
         "target": "ES2023",
+        "allowJs": true,
         "strict": true,
         "esModuleInterop": true,
-        // "ignoreDeprecations": "6.0",
         "outDir": "./dist",
         "rootDir": "./",
         "paths": {
             "@/*": ["./src/*"]
         },
+
         "types": ["node"]
     },
-    "include": ["src", "prisma.config.ts"]
+    "include": ["src", "**/*.js"]
 }

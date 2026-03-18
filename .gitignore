@@ -9,8 +9,5 @@
 # TypeScript build output
 /dist
 
-# OS generated files
-.DS_Store
-
-# Test coverage
-/coverage
+#Ignore vscode AI rules
+.github/instructions/codacy.instructions.md
