@@ -4,6 +4,9 @@ on:
     push:
         branches:
             - main
+    pull_request:
+        branches:
+            - main
 
 jobs:
     quality-checks:
@@ -13,14 +16,14 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v4
 
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+
             - name: Setup Node.js
               uses: actions/setup-node@v4
               with:
-                  node-version: 20
+                  node-version-file: 'package.json'
                   cache: 'pnpm'
-
-            - name: Enable Corepack
-              run: corepack enable
 
             - name: Install dependencies
               run: pnpm install --frozen-lockfile
@@ -31,14 +34,8 @@ jobs:
             - name: Run TypeScript type checking
               run: pnpm run type-check
 
-            - name: Run ESLint and fix auto-fixable issues
-              run: pnpm run lint:fix
-
-            - name: Check for remaining ESLint errors
+            - name: Run ESLint
               run: pnpm run lint
 
-            - name: Format with Prettier
-              run: pnpm run format
-
-            - name: Check for remaining formatting issues
+            - name: Check formatting with Prettier
               run: pnpm run format:check

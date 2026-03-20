@@ -3,7 +3,7 @@ import { EApplicationEnvironment } from '#constant/application.js'
 import fs from 'fs'
 import path from 'path'
 import pino, { type DestinationStream, type LoggerOptions } from 'pino'
-import * as rfs from 'rotating-file-stream' // ✅ use * as rfs
+import * as rfs from 'rotating-file-stream'
 
 /* ---------------------------- Ensure log directory --------------------------- */
 const logDir: string = path.join(process.cwd(), 'logs')
@@ -15,10 +15,8 @@ const isDev: boolean = config.ENV === EApplicationEnvironment.DEVELOPMENT
 /* ---------------------------- Rotating File Stream (Prod) ---------------------------- */
 const stream: DestinationStream | undefined = !isDev
     ? (rfs.createStream(
-          (time) => {
-              if (!time) return 'combined.log'
-
-              const date = new Date(time).toISOString().slice(0, 10)
+          (time: Date | number | undefined) => {
+              const date = new Date(time ?? Date.now()).toISOString().slice(0, 10)
 
               return `${date}-combined.log`
           },

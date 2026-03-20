@@ -4,7 +4,7 @@ import responseMessage from '#constant/responseMessage.js'
 import { THttpError } from '#type/types.js'
 import { Request } from 'express'
 
-import logger from './logger'
+import logger from './logger.js'
 
 const errorObjectFunc = (err: unknown, req: Request, errorStatusCode = 500): THttpError => {
     const errorObj: THttpError = {
