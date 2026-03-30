@@ -1,19 +1,15 @@
 {
     "compilerOptions": {
-        "module": "ESNext",
-        "moduleResolution": "bundler",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
         "target": "ES2023",
-        "allowJs": true,
         "strict": true,
         "esModuleInterop": true,
         "outDir": "./dist",
-        "rootDir": "./",
-        "paths": {
-            "@/*": ["./src/*"]
-        },
-
-        "types": ["node"]
+        "rootDir": "./src",
+        "types": ["node"],
+        "sourceMap": true
     },
-    "include": ["src", "**/*.js"],
-    "exclude": ["node_modules", "dist", "src/**/*.js"]
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
 }
