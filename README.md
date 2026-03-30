@@ -1,6 +1,6 @@
-# backend-starter
+# backend-starter-toolkit
 
-A minimal Node.js + TypeScript backend starter template using Express, Pino logging, validation middleware, 404 + error handling, and fast development cycle.
+A minimal Node.js + TypeScript backend starter template and CLI tool using Express, Pino logging, validation middleware, 404 + error handling, and fast development cycle.
 
 ## ✅ Features
 
@@ -12,7 +12,6 @@ A minimal Node.js + TypeScript backend starter template using Express, Pino logg
 - centralized error handling + 404 not found
 - utility module `sum` with Vitest unit tests
 - linting, formatting, commit hooks, and type-checking workflows
-- Docker-ready arrangements in `docker/`
 
 ## 📦 Requirements
 
@@ -35,10 +34,12 @@ cp .env.example .env.staging
 cp .env.example .env.production
 ```
 
-- `PORT` (e.g., `3000`)
-- `SERVER_URL` (e.g., `http://localhost:3000`)
-- `ENV` (`development` | `staging` | `production`)
-- `DATABASE_URL` (optional; available config key)
+### Environment Variables
+
+- `PORT`: The port number on which the Express server will listen (e.g., `3000`)
+- `SERVER_URL`: The base URL of the server (e.g., `http://localhost:3000`)
+- `ENV`: The environment mode, one of `development`, `staging`, or `production`
+- `DATABASE_URL`: The database connection string (optional; required if using a database)
 
 ## ▶️ Development
 
@@ -97,7 +98,15 @@ Git hooks via `husky` and `lint-staged` run lint + prettier before commit.
 ## 🌐 API Endpoints
 
 - `GET /` returns 200 with body "Hello World!"
-- Any unknown route triggers `404` and the notFound middleware
+
+## 🖥️ CLI Usage
+
+This project can be installed globally and used as a CLI tool to bootstrap new backend projects.
+
+```bash
+npm install backend-starter-toolkit
+backend-starter --help
+```
 
 ## 🛡 Middleware flow
 
@@ -123,15 +132,7 @@ Git hooks via `husky` and `lint-staged` run lint + prettier before commit.
 - `vitest`: testing framework (`test`/`coverage`)
 - `eslint`, `@commitlint`, `prettier`: code quality and style enforcement
 - `husky`, `lint-staged`: commit hooks and pre-commit lint/format
-
-## 🐳 Docker / Production
-
-- Compose files:
-    - `docker/docker-compose.prod.yml`
-    - `docker/development/Dockerfile`
-    - `docker/production/Dockerfile`
-
-Use the production docker compose setup to run in containerized mode.
+- `npm-check-updates` (ncu): check and update outdated dependencies
 
 ## 🤝 Contributing
 

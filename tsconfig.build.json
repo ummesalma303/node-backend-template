@@ -1,12 +1,5 @@
 {
     "extends": "./tsconfig.json",
+    "include": ["src/**/*", "bin/**/*"],
     "exclude": ["**/*.test.ts", "**/*.spec.ts"]
 }
-
-// {
-//   "extends": "./tsconfig.json",
-//   "compilerOptions": {
-//     "moduleResolution": "node"
-//   },
-//   "exclude": ["**/*.test.ts", "**/*.spec.ts"]
-// }
