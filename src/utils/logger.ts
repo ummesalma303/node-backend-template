@@ -1,10 +1,10 @@
 import config from '#config/config.js'
 import { EApplicationEnvironment } from '#constant/application.js'
+import dayjs from 'dayjs'
 import fs from 'fs'
 import path from 'path'
 import pino, { type DestinationStream, type LoggerOptions } from 'pino'
 import * as rfs from 'rotating-file-stream'
-
 /* ---------------------------- Ensure log directory --------------------------- */
 const logDir: string = path.join(process.cwd(), 'logs')
 if (!fs.existsSync(logDir)) fs.mkdirSync(logDir, { recursive: true })
@@ -37,8 +37,10 @@ const options: LoggerOptions = {
         }
     },
     level: isDev ? 'debug' : 'info',
-    timestamp: () => `,"time":"${new Date().toISOString()}"`,
-
+    timestamp: () => {
+        const now = dayjs()
+        return `,"date ":"${now.format('YYYY-MM-DD')}", "time":"${now.format('HH:mm:ss')}"`
+    },
     transport: isDev
         ? {
               options: {
