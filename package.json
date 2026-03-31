@@ -1,10 +1,14 @@
 {
-  "name": "backend-starter-cli",
-  "version": "1.0.2",
+  "name": "backend-starter-toolkit",
+  "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "postinstall": "node ./bin/postinstall.js"
+  },
   "bin": {
     "backend-starter-toolkit": "./bin/index.js"
   },
+  "files": ["bin","templates"],
   "dependencies": {
     "inquirer": "^13.3.2"
   },

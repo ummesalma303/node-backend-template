@@ -19,7 +19,26 @@ A minimal Node.js + TypeScript backend starter template and CLI tool using Expre
 - Node.js 25.x (or latest compatible)
 - `pnpm` (project uses `pnpm` package manager)
 
-## 🚀 Install dependencies
+## �️ Usage with NPX
+
+**Quick start with npx (no installation required):**
+
+```bash
+npx backend-starter-toolkit
+```
+
+This command bootstraps a new backend project with all the starter template features. Additional options:
+
+```bash
+npx backend-starter-toolkit --help     # Show all available commands
+npx backend-starter-toolkit --version  # Show version
+```
+
+⚠️ **Warning:** Do NOT use `npm i backend-starter-toolkit`. Always use `npx backend-starter-toolkit` for the best experience with proper dependency management.
+
+---
+
+## ��� Install dependencies
 
 ```bash
 pnpm install
@@ -96,16 +115,7 @@ Git hooks via `husky` and `lint-staged` run lint + prettier before commit.
 - `src/type/types.ts` - TS type definitions
 - `src/__tests__` - unit tests
 
-## 🖥️ CLI Usage
-
-This project can be installed globally and used as a CLI tool to bootstrap new backend projects.
-
-```bash
-npm install backend-starter-toolkit
-backend-starter-toolkit --help
-```
-
-## 🛡 Middleware flow
+##  Middleware flow
 
 1. `pino-http` logs request/response
 2. `express.json` parses incoming JSON
