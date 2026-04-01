@@ -2,78 +2,90 @@
 
 import fs from "fs";
 import path from "path";
-import { execSync } from "child_process";
 import inquirer from "inquirer";
+import { fileURLToPath } from "url";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// 📁 Resolve template path
+const templatePath = path.resolve(__dirname, "../templates");
+
+// Questions
 const questions = [
   {
     type: "input",
     name: "projectName",
     message: "Enter your project name:",
-    default: "my-app"
-  }
+    default: "my-app",
+    validate: (input) => /^[a-z0-9-_]+$/.test(input) || "Project name must be lowercase and URL friendly",
+  },
 ];
 
-const answers = await inquirer.prompt(questions);
-const projectName = answers.projectName;
+async function init() {
+  const { projectName } = await inquirer.prompt(questions);
+  const targetPath = path.join(process.cwd(), projectName);
 
-const targetPath = path.join(process.cwd(), projectName);
-
-// template path
-const __dirname = new URL('.', import.meta.url).pathname;
-const templatePath = path.join(__dirname, "../templates");
-
-// check exists
-if (fs.existsSync(targetPath)) {
-  console.log("❌ Folder already exists!");
-  process.exit(1);
-}
-
-console.log(`📁 Creating project "${projectName}"...`);
-
-// create folder
-fs.mkdirSync(targetPath, { recursive: true });
-
-// copy template
-fs.cpSync(templatePath, targetPath, {
-  recursive: true,
-  filter: (src) => {
-    const ignore = ["node_modules", "dist", "logs"];
-    return !ignore.some((item) => src.includes(item));
+  if (fs.existsSync(targetPath)) {
+    console.log("❌ Folder already exists!");
+    process.exit(1);
   }
-});
 
-// env setup
-const envExamplePath = path.join(targetPath, ".env.example");
-const envPath = path.join(targetPath, ".env");
+  console.log(`\n📁 Creating project "${projectName}"...`);
 
-if (fs.existsSync(envExamplePath)) {
-  fs.copyFileSync(envExamplePath, envPath);
-  console.log("⚙️ .env created");
+  try {
+    // 1. Create directory
+    fs.mkdirSync(targetPath, { recursive: true });
+
+    // 2. Copy Template (Improved filter)
+    fs.cpSync(templatePath, targetPath, {
+      recursive: true,
+      filter: (src) => {
+        const baseName = path.basename(src);
+        // node_modules copy korar dorkar nai jodi template-e theke thake
+        return !["node_modules", "dist", "logs", ".git"].includes(baseName);
+      },
+    });
+
+    // 3. Rename gitignore.template to .gitignore
+    const oldGit = path.join(targetPath, "gitignore.template");
+    if (fs.existsSync(oldGit)) {
+      fs.renameSync(oldGit, path.join(targetPath, ".gitignore"));
+    }
+
+    // 4. Update package.json name
+    const pkgPath = path.join(targetPath, "package.json");
+    if (fs.existsSync(pkgPath)) {
+      const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf-8"));
+      pkg.name = projectName;
+      fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
+    }
+
+    // 5. .env setup
+    const envExample = path.join(targetPath, ".env.example");
+    if (fs.existsSync(envExample)) {
+      fs.copyFileSync(envExample, path.join(targetPath, ".env"));
+    }
+
+    console.log("✅ Template files copied successfully.");
+
+    // 6. Detect Package Manager for instructions
+    const agent = process.env.npm_config_user_agent || "";
+    const pkgManager = agent.includes("pnpm") ? "pnpm" : agent.includes("yarn") ? "yarn" : "npm";
+
+    // 🚀 Success Message with Instructions
+    console.log("\n🚀 Project created! Now follow these steps:");
+    console.log("-------------------------------------------");
+    console.log(`  1. cd ${projectName}`);
+    console.log(`  2. ${pkgManager} install`);
+    console.log(`  3. ${pkgManager} run dev`);
+    console.log("-------------------------------------------\n");
+
+  } catch (err) {
+    console.error("\n❌ Something went wrong during project creation:");
+    console.error(err.message);
+    process.exit(1);
+  }
 }
 
-// detect package manager
-const agent = process.env.npm_config_user_agent || "";
-
-const pkgManager = agent.includes("pnpm")
-  ? "pnpm"
-  : agent.includes("yarn")
-  ? "yarn"
-  : "npm";
-
-console.log("📦 Installing dependencies...");
-
-try {
-  execSync(`${pkgManager} install`, {
-    cwd: targetPath,
-    stdio: "inherit"
-  });
-} catch (err) {
-  console.log("❌ Installation failed!");
-  process.exit(1);
-}
-
-// success
-console.log("\n🚀 Project ready!");
-console.log(`cd ${projectName}`);
-console.log(`${pkgManager} run dev`);
+init();

@@ -6,9 +6,14 @@
     "postinstall": "node ./bin/postinstall.js"
   },
   "bin": {
-    "backend-starter-toolkit": "./bin/index.js"
+    "backend-starter-toolkit": "bin/index.js"
   },
-  "files": ["bin","templates"],
+  "files": [
+    "bin",
+    "templates",
+    "README.md"
+  ],
+  "license":"MIT",
   "dependencies": {
     "inquirer": "^13.3.2"
   },
