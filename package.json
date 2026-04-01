@@ -13,6 +13,7 @@
     "templates",
     "README.md"
   ],
+  "author": "Umme Salma",
   "license":"MIT",
   "dependencies": {
     "inquirer": "^13.3.2"
