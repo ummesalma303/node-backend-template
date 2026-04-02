@@ -1,14 +1,14 @@
 {
-    "name": "my-backend-setup",
+    "name": "backend-starter-toolkit",
     "version": "1.0.0",
     "packageManager": "pnpm@10.32.1",
     "description": "A starter toolkit for building backend applications with TypeScript and Express.",
     "main": "server.ts",
     "scripts": {
-        "dev": "tsx --watch --env-file .env.development src/server.ts",
+        "dev": "NODE_OPTIONS='--conditions=development' tsx --watch --env-file .env.development src/server.ts",
         "start": "node --env-file=.env.production dist/server.js",
-        "dev:staging": "tsx --watch --env-file .env.staging src/server.ts",
-        "dev:prod": "tsx --watch --env-file .env.production ./dist/server.js",
+        "dev:staging": "NODE_OPTIONS='--conditions=staging' tsx --watch --env-file .env.staging src/server.ts",
+        "dev:prod": "NODE_OPTIONS='--conditions=production' tsx --watch --env-file .env.production ./dist/server.js",
         "build": "tsc -p tsconfig.build.json",
         "test:run": "vitest --run",
         "test:ui": "vitest --ui",
@@ -62,10 +62,11 @@
         "vitest": "^4.1.0"
     },
     "imports": {
-        "#*.js": {
-            "development":"./src/*.ts*",
-            "default":"./dist/*.js"}
-    },
+  "#*.js": {
+    "development": "./src/*.ts",
+    "default": "./dist/*.js"
+  }
+},
     "dependencies": {
         "commander": "^14.0.3",
         "cors": "^2.8.6",
