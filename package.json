@@ -1,12 +1,12 @@
 {
-  "name": "my-backend-setup",
-  "version": "1.0.0",
+  "name": "node-backend-template",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "postinstall": "node ./bin/postinstall.js"
   },
   "bin": {
-    "my-backend-setup": "bin/index.js"
+    "node-backend-template": "bin/index.js"
   },
   "files": [
     "bin",
@@ -14,9 +14,13 @@
     "README.md"
   ],
   "author": "Umme Salma",
-  "license":"MIT",
+  "license": "MIT",
   "dependencies": {
-    "inquirer": "^13.3.2"
+    "chalk": "^5.6.2",
+    "gradient-string": "^3.0.0",
+    "inquirer": "^8.2.7",
+    "ora": "^9.3.0",
+    "remove": "^0.1.5"
   },
   "engines": {
     "node": ">=18"

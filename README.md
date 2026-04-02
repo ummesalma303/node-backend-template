@@ -1,4 +1,4 @@
-# backend-starter-toolkit
+# node-backend-template
 
 A minimal Node.js + TypeScript backend starter template and CLI tool using Express, Pino logging, validation middleware, 404 + error handling, and fast development cycle.
 
@@ -24,17 +24,51 @@ A minimal Node.js + TypeScript backend starter template and CLI tool using Expre
 **Quick start with npx (no installation required):**
 
 ```bash
-npx backend-starter-toolkit
+npx node-backend-template
 ```
 
-This command bootstraps a new backend project with all the starter template features. Additional options:
+Running this starts an interactive project generator. It now supports:
+
+- project name prompt (must be lowercase, URL-friendly)
+- language selection: `TypeScript` or `JavaScript`
+- package manager selection: `npm`, `yarn`, or `pnpm`
+
+Once complete, it:
+
+1. creates the project folder
+2. copies the `templates/{ts|js}` skeleton
+3. renames `gitignore.template` → `.gitignore`
+4. updates `package.json` name
+5. copies `.env.example` to `.env`
+
+
+### Example
 
 ```bash
-npx backend-starter-toolkit --help     # Show all available commands
-npx backend-starter-toolkit --version  # Show version
+npx node-backend-template
+# Enter project name: my-app
+# Choose language: TypeScript
+# Choose package manager: pnpm
 ```
 
-> ⚠️ **Warning:** Do NOT use `npm i backend-starter-toolkit`. Always use `npx backend-starter-toolkit` for the best experience with proper dependency management.
+Then run:
+
+```bash
+cd my-app
+pnpm install
+pnpm dev
+```
+
+This command bootstraps a new backend project with all the starter template features.
+
+Additional commands:
+
+```bash
+npx node-backend-template --help     # Show all available commands
+npx node-backend-template --version  # Show version
+```
+
+> ⚠️ **Warning:** Do NOT use `npm i node-backend-template`. Always use `npx node-backend-template` for the best experience with proper dependency management.
 
 ---
 

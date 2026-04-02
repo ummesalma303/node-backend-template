@@ -1,6 +1,6 @@
 console.log(`
-⚠️ You installed backend-starter-toolkit
+⚠️ You installed node-backend-template
 
 👉 To create a project, run:
-npx backend-starter-toolkit
+npx node-backend-template
 `);

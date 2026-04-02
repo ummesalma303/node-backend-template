@@ -8,10 +8,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// 📁 Template path
-const templatePath = path.resolve(__dirname, "../templates");
-
-// questions
+// Questions
 const questions = [
   {
     type: "input",
@@ -24,6 +21,16 @@ const questions = [
   },
   {
     type: "list",
+    name: "language",
+    message: "Select your project language:",
+    choices: [
+      { name: "TypeScript", value: "ts" },
+      { name: "JavaScript", value: "js" },
+    ],
+    default: "ts",
+  },
+  {
+    type: "list",
     name: "packageManager",
     message: "Select a package manager:",
     choices: ["npm", "yarn", "pnpm"],
@@ -32,23 +39,26 @@ const questions = [
 ];
 
 async function init() {
-  const { projectName, packageManager } = await inquirer.prompt(questions);
+  const { projectName, language, packageManager } =
+    await inquirer.prompt(questions);
 
   const targetPath = path.join(process.cwd(), projectName);
 
-  // ❌ Folder exists check
+  // template dynamic path 🔥
+  const templatePath = path.resolve(__dirname, `../templates/${language}`);
+
   if (fs.existsSync(targetPath)) {
     console.log("❌ Folder already exists!");
     process.exit(1);
   }
 
-  console.log(`\n📁 Creating project "${projectName}"...\n`);
+  console.log(`\n📁 Creating ${language.toUpperCase()} project "${projectName}"...\n`);
 
   try {
-    // 1️⃣ Create directory
+    // create folder
     fs.mkdirSync(targetPath, { recursive: true });
 
-    // 2️⃣ Copy template
+    // copy template
     fs.cpSync(templatePath, targetPath, {
       recursive: true,
       filter: (src) => {
@@ -57,26 +67,22 @@ async function init() {
       },
     });
 
-    // 3️⃣ Rename gitignore
+    // rename gitignore
     const oldGit = path.join(targetPath, "gitignore.template");
     if (fs.existsSync(oldGit)) {
       fs.renameSync(oldGit, path.join(targetPath, ".gitignore"));
     }
 
-    // 4️⃣ Update package.json
+    // update package.json
     const pkgPath = path.join(targetPath, "package.json");
     if (fs.existsSync(pkgPath)) {
       const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf-8"));
-
       pkg.name = projectName;
-
-      // remove fixed package manager
       delete pkg.packageManager;
-
       fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
     }
 
-    // 5️⃣ .env setup
+    // env setup
     const envExample = path.join(targetPath, ".env.example");
     if (fs.existsSync(envExample)) {
       fs.copyFileSync(envExample, path.join(targetPath, ".env"));
@@ -84,38 +90,33 @@ async function init() {
 
     console.log("✅ Template files copied successfully.\n");
 
-    // 🎯 package manager specific commands
+    // commands
     let installCmd = "";
     let devCmd = "";
 
     if (packageManager === "npm") {
       installCmd = "npm install";
       devCmd = "npm run dev";
-    }
-
-    if (packageManager === "yarn") {
+    } else if (packageManager === "yarn") {
       installCmd = "yarn";
       devCmd = "yarn dev";
-    }
-
-    if (packageManager === "pnpm") {
+    } else {
       installCmd = "pnpm install";
       devCmd = "pnpm dev";
     }
 
-    // 🚀 Final Instructions (Clean UX)
+    // 🎉 Final output
     console.log("\n🚀 Project created successfully!");
     console.log("=====================================");
+    console.log(`📦 Stack: ${language.toUpperCase()}`);
+    console.log(`📦 Package Manager: ${packageManager}\n`);
+
     console.log("👉 Next steps:\n");
 
-    console.log(`1. Go to project folder:`);
-    console.log(`   cd ${projectName}\n`);
+    console.log(`1. cd ${projectName}`);
+    console.log(`2. ${installCmd}`);
+    console.log(`3. ${devCmd}\n`);
 
-    console.log(`2. Install dependencies:`);
-    console.log(`   ${installCmd}\n`);
-
-    console.log(`3. Start development server:`);
-    console.log(`   ${devCmd}\n`);
 
   } catch (err) {
     console.error("\n❌ Error creating project:");

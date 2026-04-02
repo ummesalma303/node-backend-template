@@ -1,5 +1,5 @@
 {
-    "name": "backend-starter-toolkit",
+    "name": "node-backend-template",
     "version": "1.0.0",
     "packageManager": "pnpm@10.32.1",
     "description": "A starter toolkit for building backend applications with TypeScript and Express.",
