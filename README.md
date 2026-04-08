@@ -2,6 +2,10 @@
 
 A minimal Node.js + TypeScript backend starter template and CLI tool using Express, Pino logging, validation middleware, 404 + error handling, and fast development cycle.
 
+## Keywords
+
+node-backend-template, backend-starter, node-cli-tool, express-template, typescript-backend, api-starter, backend-boilerplate
+
 ## ✅ Features
 
 - Express server with `src/app.ts` and `src/server.ts`
@@ -25,6 +29,7 @@ A minimal Node.js + TypeScript backend starter template and CLI tool using Expre
 
 ```bash
 npx node-backend-template
+pnpm dlx node-backend-template
 ```
 
 Running this starts an interactive project generator. It now supports:
