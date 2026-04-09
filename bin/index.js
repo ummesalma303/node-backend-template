@@ -2,57 +2,67 @@
 
 import fs from "fs";
 import path from "path";
-import inquirer from "inquirer";
 import { fileURLToPath } from "url";
+import * as p from "@clack/prompts";
+import pc from "picocolors";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Questions
-const questions = [
-  {
-    type: "input",
-    name: "projectName",
-    message: "Enter your project name:",
-    default: "my-app",
-    validate: (input) =>
-      /^[a-z0-9-_]+$/.test(input) ||
-      "Project name must be lowercase and URL friendly",
-  },
-  {
-    type: "list",
-    name: "language",
-    message: "Select your project language:",
-    choices: [
-      { name: "TypeScript", value: "ts" },
-      { name: "JavaScript", value: "js" },
-    ],
-    default: "ts",
-  },
-  {
-    type: "list",
-    name: "packageManager",
-    message: "Select a package manager:",
-    choices: ["npm", "yarn", "pnpm"],
-    default: "npm",
-  },
-];
-
 async function init() {
-  const { projectName, language, packageManager } =
-    await inquirer.prompt(questions);
+  console.clear();
+  
+  p.intro(`${pc.bgCyan(pc.black(" node-backend-template "))}`);
 
+  const project = await p.group(
+    {
+      projectName: () =>
+        p.text({
+          message: "Enter your project name:",
+          placeholder: "my-app",
+          validate: (value) => {
+            if (!value) return "Project name is required";
+            if (!/^[a-z0-9-_]+$/.test(value))
+              return "Project name must be lowercase and URL friendly";
+          },
+        }),
+      language: () =>
+        p.select({
+          message: "Select your project language:",
+          options: [
+            { value: "ts", label: "TypeScript", hint: "Recommended" },
+            { value: "js", label: "JavaScript" },
+          ],
+        }),
+      packageManager: () =>
+        p.select({
+          message: "Select a package manager:",
+          options: [
+            { value: "pnpm", label: "pnpm", hint: "Fastest" },
+            { value: "npm", label: "npm" },
+            { value: "yarn", label: "yarn" },
+          ],
+        }),
+    },
+    {
+      onCancel: () => {
+        p.cancel("Operation cancelled.");
+        process.exit(0);
+      },
+    }
+  );
+
+  const { projectName, language, packageManager } = project;
   const targetPath = path.join(process.cwd(), projectName);
-
-  // template dynamic path 🔥
   const templatePath = path.resolve(__dirname, `../templates/${language}`);
 
   if (fs.existsSync(targetPath)) {
-    console.log("❌ Folder already exists!");
+    p.log.error(pc.red("❌ Folder already exists!"));
     process.exit(1);
   }
 
-  console.log(`\n📁 Creating ${language.toUpperCase()} project "${projectName}"...\n`);
+  const s = p.spinner();
+  s.start(`Creating ${language.toUpperCase()} project "${projectName}"...`);
 
   try {
     // create folder
@@ -78,7 +88,6 @@ async function init() {
     if (fs.existsSync(pkgPath)) {
       const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf-8"));
       pkg.name = projectName;
-      delete pkg.packageManager;
       fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
     }
 
@@ -88,39 +97,24 @@ async function init() {
       fs.copyFileSync(envExample, path.join(targetPath, ".env"));
     }
 
-    console.log("✅ Template files copied successfully.\n");
+    s.stop(pc.green("✅ Template files copied successfully."));
 
-    // commands
-    let installCmd = "";
-    let devCmd = "";
+    // commands logic
+    const commands = {
+      npm: { install: "npm install", dev: "npm run dev" },
+      yarn: { install: "yarn", dev: "yarn dev" },
+      pnpm: { install: "pnpm install", dev: "pnpm dev" },
+    };
 
-    if (packageManager === "npm") {
-      installCmd = "npm install";
-      devCmd = "npm run dev";
-    } else if (packageManager === "yarn") {
-      installCmd = "yarn";
-      devCmd = "yarn dev";
-    } else {
-      installCmd = "pnpm install";
-      devCmd = "pnpm dev";
-    }
+    const nextSteps = `cd ${projectName}\n${commands[packageManager].install}\n${commands[packageManager].dev}`;
 
-    // 🎉 Final output
-    console.log("\n🚀 Project created successfully!");
-    console.log("=====================================");
-    console.log(`📦 Stack: ${language.toUpperCase()}`);
-    console.log(`📦 Package Manager: ${packageManager}\n`);
-
-    console.log("👉 Next steps:\n");
-
-    console.log(`1. cd ${projectName}`);
-    console.log(`2. ${installCmd}`);
-    console.log(`3. ${devCmd}\n`);
-
+    p.note(nextSteps, "Next steps:");
+    
+    p.outro(pc.cyan(`Done! Built with by Umme Salma`));
 
   } catch (err) {
-    console.error("\n❌ Error creating project:");
-    console.error(err.message);
+    s.stop(pc.red("❌ Error creating project"));
+    p.log.error(err.message);
     process.exit(1);
   }
 }
